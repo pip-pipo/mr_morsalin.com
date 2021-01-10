@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/mr_morsalin.com/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/mr_morsalin.com/static/js/main.8e50b32d.chunk.js",
-    "main.js.map": "/mr_morsalin.com/static/js/main.8e50b32d.chunk.js.map",
+    "main.js": "/mr_morsalin.com/static/js/main.eaf3ffa2.chunk.js",
+    "main.js.map": "/mr_morsalin.com/static/js/main.eaf3ffa2.chunk.js.map",
     "runtime-main.js": "/mr_morsalin.com/static/js/runtime-main.60484127.js",
     "runtime-main.js.map": "/mr_morsalin.com/static/js/runtime-main.60484127.js.map",
     "static/js/2.b83a5b3b.chunk.js": "/mr_morsalin.com/static/js/2.b83a5b3b.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.60484127.js",
     "static/js/2.b83a5b3b.chunk.js",
     "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.8e50b32d.chunk.js"
+    "static/js/main.eaf3ffa2.chunk.js"
   ]
 }
