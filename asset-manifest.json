@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/mr_morsalin.com/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/mr_morsalin.com/static/js/main.eaf3ffa2.chunk.js",
-    "main.js.map": "/mr_morsalin.com/static/js/main.eaf3ffa2.chunk.js.map",
+    "main.css": "/mr_morsalin.com/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/mr_morsalin.com/static/js/main.0e9dde1b.chunk.js",
+    "main.js.map": "/mr_morsalin.com/static/js/main.0e9dde1b.chunk.js.map",
     "runtime-main.js": "/mr_morsalin.com/static/js/runtime-main.60484127.js",
     "runtime-main.js.map": "/mr_morsalin.com/static/js/runtime-main.60484127.js.map",
-    "static/js/2.b83a5b3b.chunk.js": "/mr_morsalin.com/static/js/2.b83a5b3b.chunk.js",
-    "static/js/2.b83a5b3b.chunk.js.map": "/mr_morsalin.com/static/js/2.b83a5b3b.chunk.js.map",
+    "static/js/2.fe289888.chunk.js": "/mr_morsalin.com/static/js/2.fe289888.chunk.js",
+    "static/js/2.fe289888.chunk.js.map": "/mr_morsalin.com/static/js/2.fe289888.chunk.js.map",
     "index.html": "/mr_morsalin.com/index.html",
-    "static/css/main.8c8b27cf.chunk.css.map": "/mr_morsalin.com/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.b83a5b3b.chunk.js.LICENSE.txt": "/mr_morsalin.com/static/js/2.b83a5b3b.chunk.js.LICENSE.txt"
+    "static/css/main.6dea0f05.chunk.css.map": "/mr_morsalin.com/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.fe289888.chunk.js.LICENSE.txt": "/mr_morsalin.com/static/js/2.fe289888.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.60484127.js",
-    "static/js/2.b83a5b3b.chunk.js",
-    "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.eaf3ffa2.chunk.js"
+    "static/js/2.fe289888.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.0e9dde1b.chunk.js"
   ]
 }
