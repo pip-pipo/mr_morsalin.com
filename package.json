@@ -7,6 +7,9 @@
     "@testing-library/jest-dom": "^5.11.8",
     "@testing-library/react": "^11.2.3",
     "@testing-library/user-event": "^12.6.0",
+    "axios": "^0.21.1",
+    "concurrently": "^5.3.0",
+    "json-server": "^0.16.3",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
@@ -15,11 +18,13 @@
   },
   "scripts": {
     "predeploy": "npm run build",
+    "start:dev": "concurrently \"npm start\"  \" npm run json-server \"",
     "deploy": "gh-pages -d master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "json-server": "json-server --watch db.json --port 3003"
   },
   "eslintConfig": {
     "extends": [

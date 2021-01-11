@@ -1,0 +1,38 @@
+.page__not__found {
+  background: #000;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: bgchange infinite 0.1s;
+  -webkit-animation: bgchange infinite 3s;
+}
+@keyframes bgchange {
+    0% { background: rgb(88, 22, 22); }
+    30% {background: rgb(23, 75, 57);  }
+    40%{background: rgb(21, 34, 158); }
+    50%{background: rgb(37, 158, 21); }
+    68%, 72% { background: rgb(0, 0, 0);  }
+    88%, 72% { background: rgb(61, 73, 5);  }
+
+    100% { background: rgb(75, 46, 23);  }
+  }
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.img{
+     object-fit: cover;
+     width: 150px !important;
+     border-radius: 9999px;
+     -webkit-border-radius: 9999px;
+     margin: 20px;
+     -moz-border-radius: 9999px;
+     -ms-border-radius: 9999px;
+     -o-border-radius: 9999px;
+}
