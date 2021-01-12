@@ -24,7 +24,7 @@ return(
           <li className="nav-item">
             <Link className="nav-link" exact to="/contact">Contact</Link>
           </li>
-          <button className="btn btn-outline-info text-light">Add user</button>
+          <Link className="btn btn-outline-info text-light" exact to="/users/add">Add user</Link>
         </ul>
         <form className="d-flex">
           <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
