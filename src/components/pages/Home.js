@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios';
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 const Home = () => {
     const [user, setUser] = useState([]);
 
@@ -12,11 +12,18 @@ const Home = () => {
         const result = await axios.get("http://localhost:3003/user");
         setUser(result.data.reverse())
     }
+
+
+    const deleteUser = async(id) => {
+        await axios.delete(`http://localhost:3003/user/${id}`)
+        postUser()
+    }
+
     return (
 
         <div className="mt-2">
             <h2 className="text-center text-info bg-dark p-2">user data</h2>
-            <table class="table table-dark w-75  m-3 ">
+            <table class="table table-dark w-75  m-auto ">
                 <thead>
                     <tr>
                         <th scope="col">#</th>
@@ -40,9 +47,9 @@ const Home = () => {
                                 <td>{person.phone}</td>
                                 <td>{person.website}</td>
                                 <td>
-                                <Link className="btn btn-danger" to="/user/edit">Edit</Link>
-                                <Link className="btn btn-info">Update</Link>
-                                <Link className="btn btn-success">del</Link>
+                                    <Link className="btn btn-danger" to={`user/edit/${person.id}`}>Edit</Link>
+                                    <Link className="btn btn-info">Update</Link>
+                                    <Link className="btn btn-success" onClick={() => deleteUser(person.id)}>del</Link>
                                 </td>
                             </tr>
                         ))

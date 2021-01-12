@@ -1,10 +1,15 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import axios from "axios";
 import { useHistory ,useParams} from 'react-router-dom'
 
 const Edit = () => {
     const history = useHistory();
     const {id} = useParams();
+
+  useEffect(()=>{
+      loadUser();
+  },[])
+
     const [user, setUser] = useState({
         name: "",
         username: "",
@@ -23,15 +28,16 @@ const Edit = () => {
     const onformSubmit = async (e) => {
         e.preventDefault();
         try {
-            await axios.post("http://localhost:3003/user/"+id, user);
+            await axios.put(`http://localhost:3003/user/${id}`, user);
             history.push('/')
         } catch (e) {
             console.log(e);
         }
     }
 
-    const loadUser =()=>{
-
+    const loadUser =async()=>{
+        const result = await axios.get(`http://localhost:3003/user/${id}`);
+        setUser(result.data)
     }
     return (
         <div>
