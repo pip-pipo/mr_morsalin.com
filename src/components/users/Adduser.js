@@ -36,22 +36,22 @@ const Adduser = () => {
                 <h3>Add User</h3>
 
                 <div className="form-group">
-                    <input name="name" onChange={e => onInputChange(e)} type="text" className="form-control" placeholder="Enter a name" value={name} />
+                    <input name="name" onChange={e => onInputChange(e)} type="text" className="form-control my-2" placeholder="Enter a name" value={name} />
                 </div>
                 <div className="form-group">
-                    <input name="username" onChange={e => onInputChange(e)} type="text" className="form-control" placeholder="Enter a username" value={username} />
-                </div>
-
-                <div className="form-group">
-                    <input name="email" onChange={e => onInputChange(e)} type="email" className="form-control" placeholder="Enter a email" value={email} />
+                    <input name="username" onChange={e => onInputChange(e)} type="text" className="form-control my-2" placeholder="Enter a username" value={username} />
                 </div>
 
                 <div className="form-group">
-                    <input name="phone" onChange={e => onInputChange(e)} type="text" className="form-control" placeholder="Enter a phone" value={phone} />
+                    <input name="email" onChange={e => onInputChange(e)} type="email" className="form-control my-2" placeholder="Enter a email" value={email} />
                 </div>
 
                 <div className="form-group">
-                    <input name="website" onChange={e => onInputChange(e)} type="text" className="form-control" placeholder="Enter a web site" value={website} />
+                    <input name="phone" onChange={e => onInputChange(e)} type="text" className="form-control my-2" placeholder="Enter a phone" value={phone} />
+                </div>
+
+                <div className="form-group">
+                    <input name="website" onChange={e => onInputChange(e)} type="text" className="form-control my-2" placeholder="Enter a web site" value={website} />
                 </div>
 
 

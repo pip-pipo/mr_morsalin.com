@@ -13,10 +13,9 @@ const Home = () => {
         setUser(result.data.reverse())
     }
 
-
     const deleteUser = async(id) => {
         await axios.delete(`http://localhost:3003/user/${id}`)
-        postUser()
+        postUser();
     }
 
     return (
@@ -48,7 +47,7 @@ const Home = () => {
                                 <td>{person.website}</td>
                                 <td>
                                     <Link className="btn btn-danger" to={`user/edit/${person.id}`}>Edit</Link>
-                                    <Link className="btn btn-info">Update</Link>
+                                    <Link className="btn btn-info" to={`user/update/${person.id}`}>view</Link>
                                     <Link className="btn btn-success" onClick={() => deleteUser(person.id)}>del</Link>
                                 </td>
                             </tr>

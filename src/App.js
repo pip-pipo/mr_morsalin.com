@@ -9,6 +9,7 @@ import NotFound from './components/pages/NotFound'
 import Adduser from './components/users/Adduser'
 import './App.css';
 import Edit from './components/users/Edit'
+import User from './components/users/User'
 const App = () => {
   return (
     <div>
@@ -21,6 +22,8 @@ const App = () => {
           <Route exact path="/services" component={Services} />
           <Route exact path="/users/add" component={Adduser} />
           <Route exact path="/user/edit/:id" component={Edit} />
+          <Route exact path="/user/update/:id" component={User} />
+
           <Route component={NotFound} />
         </Switch>
       </Router>
